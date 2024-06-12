@@ -3,15 +3,11 @@ const app = express()
 const mongoose = require('./database/mongoose.js')
 const Task = require('./database/models/task.js')
 const List = require('./database/models/list.js')
+const cors = require('cors')
 
 //enable CORS 
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', "*");
-  res.header('Access-Control-Allow-Methods', "GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS");
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next()
-})
+app.use(cors());
 
 app.use(express.json())
 
