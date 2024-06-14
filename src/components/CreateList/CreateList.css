@@ -1,0 +1,44 @@
+.modal__form {
+  background-color: rgb(193, 185, 185);
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.form__label {
+  flex-grow: 1;
+}
+
+.form__label-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.create-list-button {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: filter .2s ease-in-out;
+  background-color: blue;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100%;  
+}
+
+.create-list-button:hover {
+  filter: hue-rotate(55deg);
+}
